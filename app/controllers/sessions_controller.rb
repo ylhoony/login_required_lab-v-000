@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
     #   redirect_to "/"
     # end
 
-    current_user ? redirect_to "/" : redirect_to "/login"
+    current_user ? redirect_to("/") : redirect_to("/login")
 
   end
 
