@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
     # end
 
     current_user ? redirect_to "/" : redirect_to "/login"
-    
+
   end
 
   def destroy
