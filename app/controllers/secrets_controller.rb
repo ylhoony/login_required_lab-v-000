@@ -6,10 +6,4 @@ class SecretsController < ApplicationController
 
   end
 
-  private
-
-    def require_login
-      redirect_to "/login" unless logged_in?
-    end
-
 end
