@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     # redirect_to controller: 'application', action: 'hello'
 
     current_user ? redirect_to("/") : redirect_to("/login")
-
   end
 
   def destroy
