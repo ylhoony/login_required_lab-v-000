@@ -6,5 +6,4 @@ class SecretsController < ApplicationController
 
   end
 
-
 end
