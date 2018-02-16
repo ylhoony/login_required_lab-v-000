@@ -5,9 +5,11 @@ class SessionsController < ApplicationController
   end
 
   def create
+    binding.pry
     if !current_user
       redirect_to "/login"
     else
+      binding.pry
       redirect_to "/"
     end
   end
