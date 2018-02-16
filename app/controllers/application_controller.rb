@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
 
   end
 
-
   def current_user
     if params[:name].present?
       session[:name] = params[:name]
