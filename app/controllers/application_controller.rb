@@ -21,4 +21,8 @@ class ApplicationController < ActionController::Base
     current_user != nil
   end
 
+  def require_login
+    redirect_to "/login" unless logged_in?
+  end
+
 end
